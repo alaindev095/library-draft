@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>My Online Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product List Section -->
+  <section id="products" class="container">
+    <h2>Our Products</h2>
+    <div class="product-card">
+      <h3>Product 1</h3>
+      <p>Description of product 1. It's an amazing item!</p>
+      <p class="price">$19.99</p>
+      <button onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Product 2</h3>
+      <p>Description of product 2. A must-have item!</p>
+      <p class="price">$29.99</p>
+      <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Product 3</h3>
+      <p>Description of product 3. Limited edition!</p>
+      <p class="price">$49.99</p>
+      <button onclick="addToCart('Product 3', 49.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Shopping Cart Section -->
+  <section id="cart" class="container">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+      <p>Your cart is empty.</p>
+    </div>
+    <div id="cart-summary">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn" disabled>Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Online Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
